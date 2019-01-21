@@ -36,3 +36,7 @@ body {
   color: white;
   transform: rotate(90deg);
 }
+input,
+button {
+  outline: none;
+}
