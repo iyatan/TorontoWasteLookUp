@@ -7,7 +7,7 @@ class App extends Component {
     return (
       <div>
         <div className="header">
-          <h2>Toronto Waste Lookup</h2>
+          <h3>Toronto Waste Lookup</h3>
         </div>
 
         <Searched searchedTerm />
