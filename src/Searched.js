@@ -88,7 +88,7 @@ class Searched extends Component {
         </form>
 
         <div style={SearchStyles}>
-          <div>
+          <div style={container}>
             {searchTerm &&
               searching
                 .filter(item =>
@@ -118,6 +118,9 @@ class Searched extends Component {
 const SearchStyles = {
   margin: "13px",
   display: "flex"
+};
+const container = {
+  width: "100%"
 };
 
 export default Searched;

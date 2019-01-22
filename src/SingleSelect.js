@@ -21,14 +21,16 @@ const DivStyles = {
   display: "flex",
   flexDirection: "row",
   alignItems: "flex-start",
-  width: "100%"
+  width: "100%",
+  marginBottom: "1em"
 };
 const LeftStyles = {
-  width: "35%",
+  width: "30%",
   marginRight: "10%"
+  //marginTop: "1em"
 };
 const RightStyles = {
-  width: "55%",
+  width: "60%",
   marginTop: "-1em"
 };
 

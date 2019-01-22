@@ -9,8 +9,8 @@ class Favourites extends Component {
   render() {
     return (
       <div style={FavStyles}>
-        <h1 style={{ color: "#14AF74", marginLeft: "13px" }}>Favourites</h1>
-        <div>
+        <h2 style={{ color: "#14AF74", marginLeft: "13px" }}>Favourites</h2>
+        <div style={{ margin: "13px" }}>
           {this.props.selectedF &&
             Object.keys(this.props.selectedF).map((item, index) => {
               return (
