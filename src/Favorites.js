@@ -2,10 +2,6 @@ import React, { Component } from "react";
 import SingleSelect from "./SingleSelect";
 
 class Favourites extends Component {
-  componentWillMount() {
-    console.log({ fav: this.props.selectedF });
-  }
-  componentWillReceiveProps() {}
   render() {
     return (
       <div style={FavStyles}>
