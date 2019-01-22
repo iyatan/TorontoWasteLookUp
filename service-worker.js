@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/Toronto_Waste_LookUp/precache-manifest.0e6fb4c59a94e1fd781efb8eeb3b7efb.js"
+  "/Toronto_Waste_LookUp/precache-manifest.04af710d00999438391f77a50aefcf18.js"
 );
 
 workbox.clientsClaim();
