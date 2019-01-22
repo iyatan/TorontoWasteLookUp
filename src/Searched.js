@@ -20,6 +20,12 @@ class Searched extends Component {
     this.handleSubmit = this.handleSubmit.bind(this);
     //this.favorite = this.favorite.bind(this);
   }
+  componentWillMount() {
+    localStorage.getItem("selectedFav") &&
+      this.setState({
+        selectedFav: JSON.parse(localStorage.getItem("selectedFav"))
+      });
+  }
 
   contains;
   componentDidMount() {
@@ -52,6 +58,7 @@ class Searched extends Component {
         console.error(error);
       });
   }
+
   favorite = item => {
     const { selectedFav } = this.state;
     const hash = Hash(item);
@@ -69,6 +76,11 @@ class Searched extends Component {
     const { value } = this.state;
     this.setState({ searchTerm: value });
   };
+
+  componentWillUpdate(nextProps, nextState) {
+    localStorage.setItem("selectedFav", JSON.stringify(nextState.selectedFav));
+    localStorage.setItem("selected", JSON.stringify(nextState.selected));
+  }
 
   render() {
     const { searching, searchTerm, selectedFav } = this.state;
