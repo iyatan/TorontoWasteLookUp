@@ -1,5 +1,13 @@
 
 You can find the live website from this repo on https://iyatan.github.io/Toronto_Waste_LookUp/
+
+** How To Use The Web App **
+
+1- Enter key words to search for the items and press enter or click on the search button
+2- Click on the stars to add to favorites
+3- You can click again on a "favorited" item to remove it from the list of favorites
+
+
 In the project directory, you can run:
 
 ### `npm start`
